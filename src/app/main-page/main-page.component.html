@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<div>
+    <div class="d-flex" id="wrapper">
+        <!--Sidebar code-->
+            <div class="title ps-0" id="sidebar-wrapper">
+                <div class="sidebar-heading py-4 ms-2 primary-text fs-4 fw-bold text-uppercase">
+                    <i class="ps-2 fa-solid fa-circle-play"></i> MediaQuery
+                </div>
+                <div class="d-flex justify-content-start mx-2 mb-2">
+                    
+                    <button type="button" class="ask-a-doubt-btn btn btn-light border"><i class="fa-solid fa-square-plus"></i>
+                        Ask a doubt!</button>
+                </div>
+                <div class="border-bottom"></div>
+                
+                    
+                    <div class="list-group list-group-flush pe-4">
+                        <ul id="sidebar-menu my-1">
+                            <a href="#" class="list-group-item list-group-item-action disabled text-uppercase bg-transparent second-text fw-light border-0">
+                            Menu
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0 active">
+                                <i class="fa-solid fa-bars"></i> Home
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                                <i class="fa-solid fa-fire-flame-curved"></i> Trending
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                                <i class="fa-solid fa-magnifying-glass"></i> Search
+                            </a>
+                        </ul>
+
+                        <ul id="sidebar-for-u my-1">
+                            <a href="#" class="list-group-item list-group-item-action disabled text-uppercase bg-transparent second-text fw-light border-0">
+                            For You
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                                <i class="fa-solid fa-heart"></i> Favorites
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                                <i class="fa-solid fa-check-double"></i> Upcoming meets
+                            </a>
+                        </ul>
+
+                        <ul id="sidebar-solvers my-1">
+                            <a href="#" class="list-group-item list-group-item-action disabled text-uppercase bg-transparent second-text fw-light border-0">
+                            Solvers
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                                <i class="fa-solid fa-person-chalkboard"></i> Be a solver
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                                <i class="fa-solid fa-rectangle-list"></i> Solvers list
+                            </a>
+                        </ul>
+
+                        <ul id="sidebar-account my-1">
+                            <a href="#" class="list-group-item list-group-item-action disabled text-uppercase bg-transparent second-text fw-light border-0">
+                            Account
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                                <i class="fa-solid fa-gear"></i> Settings
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+                            </a>
+                        </ul>
+                        
+                    </div>
+            
+            </div>
+        <!--Sidebar code ends-->
+
+        <!-- Navbar code starts     -->
+            <div id="page-content-wrapper">
+                <div class="title-heading p-2 ms-2 primary-text fs-4 fw-bold text-uppercase">
+                    <i class="ps-2 fa-solid fa-circle-play"></i> MediaQuery
+                </div>
+
+                <nav class="navbar navbar-expand-lg bg-light d-flex justify-content-center  ">
+                    <div class="navbar-mobile container-fluid d-flex">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                        </div>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+                        </form>
+
+                        <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class=" user-details-nav navbar-nav ms-auto mb-2 mb-lg-0">
+                                <!-- <li class="nav-item-dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle second-text fw-bold" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-user me-2"></i>Arun Raj
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </li> -->
+                                <li class="profile-nav nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle second-text fw-bold" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-user me-2"></i>Arun Raj
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i>&nbsp;Profile</a>
+                                      <a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i>&nbsp;Settings</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;Logout</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                      
+                    </div>
+                  </nav>
+                
+                <div class="main-wrapper d-flex flex-row">
+                    <div class="main-content mx-2 my-2">
+                        <div class="post mb-2">
+                            
+                        </div>
+                        <div class="post mb-2">
+                            
+                        </div>
+                        <div class="post mb-2">
+                            
+                        </div>
+                        <div class="post mb-2">
+                            
+                        </div>
+                        <div class="post mb-2">
+                            
+                        </div>
+                        <div class="post mb-2">
+                            
+                        </div>
+                        <div class="post mb-2">
+                            
+                        </div>
+                        <div class="post mb-2">
+                            
+                        </div>
+                        <div class="post mb-2">
+                            
+                        </div>
+                        <div class="post mb-2">
+                            
+                        </div>
+                    </div>
+    
+                    <div class="side-content mx-2 my-2 d-flex flex-column">
+                        <div class="side-post m-5">
+
+                        </div>
+                        <div class="side-post m-5">
+                            
+                        </div>
+                    </div>
+                </div>
+                    
+                
+
+            </div>
+        <!-- Navbar code ends     -->
+
+        <!-- <div class="title ps-0" id="right-sidebar-wrapper">
+            <div class="sidebar-heading py-4 ms-2 primary-text fs-4 fw-bold text-uppercase">
+                <i class="ps-2 fa-solid fa-circle-play"></i> MediaQuery
+            </div>
+            <div class="d-flex justify-content-start mx-2 mb-2">
+                
+                <button type="button" class="ask-a-doubt-btn btn btn-light border"><i class="fa-solid fa-square-plus"></i>
+                    Ask a doubt!</button>
+            </div>
+            <div class="border-bottom"></div>
+            
+                
+                <div class="list-group list-group-flush pe-4">
+                    <ul id="right-sidebar-menu my-1">
+                        <a href="#" class="list-group-item list-group-item-action disabled text-uppercase bg-transparent second-text fw-light border-0">
+                        Menu
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0 active">
+                            <i class="fa-solid fa-bars"></i> Home
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                            <i class="fa-solid fa-fire-flame-curved"></i> Trending
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                            <i class="fa-solid fa-magnifying-glass"></i> Search
+                        </a>
+                    </ul>
+
+                    <ul id="right-sidebar-for-u my-1">
+                        <a href="#" class="list-group-item list-group-item-action disabled text-uppercase bg-transparent second-text fw-light border-0">
+                        For You
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                            <i class="fa-solid fa-heart"></i> Favorites
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                            <i class="fa-solid fa-check-double"></i> Upcoming meets
+                        </a>
+                    </ul>
+
+                    <ul id="right-sidebar-solvers my-1">
+                        <a href="#" class="list-group-item list-group-item-action disabled text-uppercase bg-transparent second-text fw-light border-0">
+                        Solvers
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                            <i class="fa-solid fa-person-chalkboard"></i> Be a solver
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                            <i class="fa-solid fa-rectangle-list"></i> Solvers list
+                        </a>
+                    </ul>
+
+                    <ul id="right-sidebar-account my-1">
+                        <a href="#" class="list-group-item list-group-item-action disabled text-uppercase bg-transparent second-text fw-light border-0">
+                        Account
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                            <i class="fa-solid fa-gear"></i> Settings
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold border-0">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+                        </a>
+                    </ul>
+                    
+                </div>
+        
+        </div> -->
+
+    </div>
+</div>

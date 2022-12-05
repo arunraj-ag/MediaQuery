@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --main-color: #FFFFFF;
+    --color-dark: #ebebeb;
+    --text-dark: #000000;
+}
+
+*{
+    font-family: Quicksand, sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+
+
+.title{
+    background-color: var(--color-dark);
+}
+.ask-a-doubt-btn{
+    width: 100% !important;
+    text-align:start;
+    background-color: rgb(233, 231, 231);
+}
+
+.list-group{
+    width: 15rem;
+    background-color: --color-dark;
+
+    transition: margin 0.25s ease-out;
+}
+.list-group-item{
+    border-radius: 10px;
+    margin-left: -1.8rem;
+}
+.list-group-item.active{
+    color: black;
+    border: none; 
+}
+
+
+
+#sidebar-menu,#sidebar-for-u,#sidebar-solvers,#sidebar-account a{
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
+
+#wrapper{
+    overflow-x: hidden;
+}
+#sidebar-wrapper{
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin 0.25s ease-out;
+    order: 0;
+    position: sticky;
+}
+#wrapper.toggled #sidebar-wrapper{
+    margin-left: 0;
+}
+#menu-toggle{
+    cursor: pointer;
+}
+#page-content-wrapper{
+    min-width: 100vw;
+    order: 1;
+}
+
+.title-heading{
+    display: none;
+}
+.dropdown-menu{
+    left: -130%;
+}
+.profile-nav{
+    margin-right: 2rem;
+}
+.form-inline{
+    margin-left: 20%;
+    display: flex;
+    width: 50%;
+}
+
+
+@media(min-width : 1024px){
+    #sidebar-wrapper{
+        margin-left: 0;
+    }
+
+    #page-content-wrapper{
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+@media(max-width : 1024px){
+
+    .form-inline{
+        margin-left: 0;
+        width: 70%;
+    }
+
+    .navbar-toggler{
+        display: none !important;
+    }
+
+    .navbar-mobile{
+        justify-content: start;
+    }
+
+    /* .title-heading{
+        display: inline;
+        width: 100%;
+    }
+
+    .sidebar-heading{
+        display: none ;
+    } */
+    
+}
+
+.main-wrapper{
+    height: 100%;
+    display: flex;
+}
+
+.main-content{
+    width: 73%;
+    background-color: #FFFFFF;
+}
+
+.side-content{
+    width: 27%;
+    background-color: #a7a7a7;
+    border-radius: 8px;
+}
+
+
+.post{
+    height: 10%;
+    background-color: rgb(227, 167, 97);
+    border-radius: 8px;
+}
+
+.side-post{
+    height: 50%;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
